@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "scripts": {
     "start": "tsx server.ts",
-    "build": "tsc",
     "dev": "tsx watch server.ts"
   },
   "dependencies": {
