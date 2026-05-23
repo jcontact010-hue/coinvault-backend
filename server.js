@@ -79,7 +79,24 @@ app.post("/api/register-device", (req, res) => {
 });
 
 function getMockResult() {
-  return { id: `SCA_${Math.floor(Math.random()*9000)+1000}`, type: "coin", name: "1909-S VDB Lincoln Cent", value: "$1,350.00", grade: "MS-65", trend: "+8.3%", confidence: 94, image: "", mintLocation: "San Francisco", composition: "95% Copper", conditionScale: "Gem Uncirculated", surfaceScore: "9.2/10", scarcityRank: "Extremely Rare", detailImages: [], conditionBreakdown: { luster: 9.5, strike: 9.0, eyeAppeal: 9.2 }, comparisons: [] };
+  return {
+    id: `SCA_${Math.floor(Math.random()*9000)+1000}`,
+    type: "coin",
+    name: "1909-S VDB Lincoln Cent",
+    value: "$1,350.00",
+    grade: "MS-65",
+    trend: "+8.3%",
+    confidence: 94,
+    image: "",
+    mintLocation: "San Francisco Mint (S)",
+    composition: "95% Copper, 5% Tin/Zinc",
+    conditionScale: "Gem Uncirculated",
+    surfaceScore: "9.2/10",
+    scarcityRank: "Extremely Rare",
+    detailImages: [],
+    conditionBreakdown: { luster: 9.5, strike: 9.0, eyeAppeal: 9.2 },
+    comparisons: []
+  };
 }
 
 app.listen(PORT, () => console.log(`CoinVault API running on port ${PORT}`));
